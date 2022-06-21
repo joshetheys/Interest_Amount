@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Amount</title>
+</head>
+<body>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+          <div class="col-6 bg-black bg-opacity-75 text-light p-5">
+            <h1 class="text-center">Interest Calculator</h1>
+    
+            <div class="form-group my-2">
+              
+              <label for="initial">Initial Amount:</label>
+              <input type="text" class="form-control mb-2" name="initial" id="initial">
+              
+            </div>
+    
+    
+            <div class="form-group my-2">
+              
+              <label for="interest">Interest Rate:</label>
+              <input type="text" class="form-control mb-2" name="interest" id="interest" placeholder="%">
+              
+              <label for="Years">Amount of Years:</label>
+              <input type="text" class="form-control mb-2" name="Years" id="years">
+              <!-- simple interest / compound interest -->
+              <label for="interestType">Interest Type:</label>
+              <select class="form-select" name="interestType" id="interestType">
+                <option value="">Select Interest Type</option>
+                <option value="simple">Simple Interest</option>
+                <option value="compound">Compound Interest</option>
+              </select>
+    
+              <label for="compounded">Times Compounded:</label>
+              <select class="form-select" name="interestType" id="compounded">
+                <option value="">Select Compound Rate</option>
+                <option value="1">Annually</option>
+                <option value="4">Quarterly</option>
+                <option value="6">Semi-Annually</option>
+                <option value="12">Monthly</option>
+              </select>
+            </div>
+    
+            <div class="form-group my-2">
+              <button class="btn btn-primary" id="calculate">Calculate</button>
+              <button class="btn btn-primary" id="clear">Reset</button>
+            </div>
+    
+            <div class="form-group my-2">
+
+              <label for="interestAmount">Interest Amount:</label>
+              <div type="text" class="form-control mb-2" name="interestAmount" id="interestAmount">
+               
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+
+    <script src="./script/code.js"></script>
+</body>
+</html>
